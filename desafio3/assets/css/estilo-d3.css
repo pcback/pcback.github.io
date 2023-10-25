@@ -1,0 +1,241 @@
+/* parametros generales del cuerpo de la pag. web */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  filter: brightness(0.87);
+  overflow-x: hidden;
+}
+/* paremtros del contenedor Padre */
+#container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* para. del encabezado  */
+header {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  filter: alpha(opacity=50);
+  zoom: 1;
+}
+/* imagen en header */
+header > img {
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+}
+/* titulo en header */
+h1 {
+  background-color: black;
+  color: beige;
+  font-size: 55px;
+  text-align: center;
+  padding: 10px;
+}
+/* seccion 1 */
+#sec-uno {
+  background-color: black;
+  width: 100%;
+  height: 370px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+}
+/* img tres seccion 1 */
+#img-three-sec-uno {
+  width: 30%;
+  height: 270px;
+}
+/* texto seccion 1 */
+#text-sec-uno {
+  color: beige;
+  align-items: center;
+  justify-content: start;
+  font-size: 14px;
+  width: 37%;
+}
+/* seccion 2 */
+#sec-dos {
+  border: 1px solid black;
+  width: 100%;
+  height: 350px;
+  background-color: #2a2626;
+}
+/* header seccion 2 */
+#header-sec-dos {
+  width: 100%;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+/* titulo caracteristicas seccion 2 */
+#carac-sec-dos {
+  color: beige;
+  font-size: 42px;
+  text-align: center;
+  background: transparent;
+  text-transform: uppercase;
+}
+/* contenedor 1 seccion 2 */
+#container1-img-sec-dos {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 14em;
+}
+/* contenedor 2 seccion 2 */
+#container2-text-sec-dos {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5.5em;
+  text-align: center;
+}
+/* texto seccion 2 */
+.text-div-sec-dos {
+  width: 218px;
+  height: 40px;
+  background: transparent;
+  color: beige;
+  /* padding: 7px; */
+  font-size: 27px;
+}
+/* iconos seccion 2  */
+.fa-solid,
+.fa-regular,
+.fas {
+  color: #ffff;
+  font-size: 4em;
+  text-align: center;
+  height: 92px;
+}
+/* seccion 3 */
+#sec-tres {
+  border: 1px solid black;
+  width: 100%;
+  height: 360px;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+/* img seccion 3 */
+.img-sec-tres {
+  width: 337px;
+  height: 200px;
+}
+/* footer */
+#copyright {
+  padding: 4px;
+  height: auto;
+  text-align: center;
+  color: beige;
+}
+/*caja  footer */
+#sec-footer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a2626;
+}
+
+/* fin parametros */
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Pantalla MOVIL */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+@media (max-width: 576px) {
+  /* … */
+
+  /* imagen en header */
+  header > img {
+    width: 100%;
+    height: 25em;
+    background-size: cover;
+  }
+  /* seccion 1 */
+  #sec-uno {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    gap: 15px;
+  }
+  /* texto seccion 1 */
+  #text-sec-uno {
+    color: beige;
+    align-items: center;
+    justify-content: start;
+    font-size: 14px;
+    width: 90%;
+  }
+  /* img tres seccion 1 */
+  #img-three-sec-uno {
+    width: 90%;
+    height: 270px;
+  }
+  /* contenedor 1 seccion 2 */
+  #container1-img-sec-dos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 6em;
+  }
+  /* contenedor 2 seccion 2 */
+  #container2-text-sec-dos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+  }
+  /* seccion 3 */
+  #sec-tres {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+  }
+  /* img seccion 3 */
+  .img-sec-tres {
+    width: 28em;
+    height: 25em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
