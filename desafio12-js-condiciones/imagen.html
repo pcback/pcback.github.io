@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click! Imagen</title>
+    <link rel="stylesheet" href="assets/css/estilo-imagen.css" />
+  </head>
+  <body>
+    <!-- contenedor -->
+    <div id="container">
+      <!-- titulo -->
+      <h1 id="titulo">Click en Imagen!</h1>
+      <!-- imagen -->
+      <img
+        id="imagen1"
+        src="assets/img/aguila.jpg"
+        alt=""
+        onclick="// se lanza el evento onclick dentro de la imagen.
+        if(elementoImagen1.style.border == 'none'){ // la condicion es comparar la condicion con un valor en el elemento actual
+          elementoImagen1.style.border = '2px solid red' // si se cumple la condicion, asigna valor al elemento
+        }else{  //de lo contrario 
+          elementoImagen1.style.border = 'none' //se asigna otro valor al elemento.
+        }
+      
+      "
+      />
+      <!-- archivo js -->
+      <script src="assets/js/imagen.js"></script>
+    </div>
+  </body>
+</html>
