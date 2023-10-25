@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stickers</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="assets/css/estilo-stickers.css" />
+  </head>
+  <body>
+    <header>
+      <!-- titulo -->
+      <h1 id="titulo">Stickers</h1>
+    </header>
+    <!-- main -->
+    <main>
+      <div class="container">
+        <div class="contenedor">
+          <div id="grid-container">
+            <!--sticker 1  -->
+            <div id="sticker1">
+              <img class="imagenes" src="assets/img/aguila.jpg" alt="" />
+              <input type="number" min="0" id="cantidad1" />
+            </div>
+            <!--sticker 2  -->
+            <div id="sticker2">
+              <img class="imagenes" src="assets/img/img4.jpg" alt="" />
+              <input type="number" min="0" id="cantidad2" />
+            </div>
+            <!--sticker 3 -->
+            <div id="sticker3">
+              <img class="imagenes" src="assets/img/img5.jpg" alt="" />
+              <input type="number" min="0" id="cantidad3" />
+            </div>
+          </div>
+          <!-- Boton de evento validador de datos -->
+          <button
+            id="btn-validador"
+            onclick=" 
+
+        var cantidadTotal = Number(valor1.value) + Number(valor2.value) + Number(valor3.value); // suma de variables
+
+        if (Number(cantidadTotal) <= 10) {           // la condicion dice que variable tiene que ser inferior a 10 y 
+                                                    //asignar los valores dentro del cuerpo de la condicion cumplida.
+
+            msje1.style.color = 'red';  // se asigna un valor a la variable parrafo
+            msje1.innerText = 'Llevas ' + cantidadTotal + ' productos'; // impresion de texto al cumplirse la condicion. 
+                                                                        //se imprime la variable.
+
+        } else{ //De lo contrario si se cumple la segunda condicion de la variable cantidadTotal.
+            msje1.style.color = 'blue';  // se asigna un valor a la variable parrafo.
+        msje1.innerText = 'Superas el limite de productos permitidos';  // impresion de texto al cumplirse la condicion. 
+           
+        }
+                                              
+        "
+          >
+            Validador
+          </button>
+        </div>
+        <!-- Boton parrafo -->
+        <button id="btn-mensaje"><p id="mensaje"></p></button>
+      </div>
+    </main>
+    <!-- enlace archivo java script -->
+    <script src="assets/js/stcker.js"></script>
+  </body>
+</html>
