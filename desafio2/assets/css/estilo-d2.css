@@ -1,0 +1,166 @@
+/* selector universal */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: honeydew;
+}
+
+/* CONTENEDOR******* */
+#div-contenedor {
+  margin: 0;
+  width: 800px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* IMAGEN DEL ENCABEZADO */
+.img-enca {
+  padding: 0;
+  margin-bottom: 40px;
+  margin-left: 240px;
+  width: 200px;
+  height: 50px;
+}
+/* IMAGENES DE SECCION PRODUCTOS */
+.imagenes {
+  width: 230px;
+  height: 230px;
+}
+/* SECCION PRINCIPAL */
+#sec-pri {
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-image: url(../img/img-pag-pro1.jpg);
+  background-size: cover;
+  filter: brightness(120%);
+  margin-top: 40px;
+  border-radius: 10px;
+}
+#sec-pri .img-hea {
+  width: 280px;
+  height: 280px;
+  float: right;
+  position: relative;
+  display: block;
+  top: 10px;
+}
+/* texto sobre img en  header */
+#text-hea {
+  display: inline-block;
+  margin-top: 120px;
+  margin-left: 30px;
+}
+/* SECCION DE PRODUCTOS */
+#sec-pro {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid blue; */
+  text-align: center;
+}
+
+.imagenes {
+  width: 350px;
+  height: 200px;
+  float: left;
+  display: inline-block;
+  margin: 30px;
+  /* border-radius: 10px; */
+  border-radius: 100px 100px /100px 200px;
+}
+/* hover a las img de pag */
+/* #sec-pro .imagenes:hover {
+  margin-top: auto;
+  width: 100%;
+  height: 100%;
+} */
+#sec-pro .productos {
+  /* border: 1px solid blue; */
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+  height: 100%;
+  display: inline-block;
+}
+.text {
+  width: 35%;
+  margin-right: 50px;
+  margin-top: 110px;
+  text-align: left;
+  /* border: 1px solid blue; */
+  display: inline-block;
+}
+#copyright {
+  /* text-align: center;
+  margin-top: 100px; */
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Pantalla MOVIL */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+@media (max-width: 576px) {
+  /* … */
+  /* contenedor */
+  #div-contenedor {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* SECCION PRINCIPAL */
+  #div-contenedor #sec-pri {
+    display: block;
+    width: 90%;
+    height: 15em;
+    background-image: url(../img/img-pag-pro1.jpg);
+    background-size: cover;
+    filter: brightness(120%);
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #sec-pri .img-hea {
+    width: 17em;
+    height: 17em;
+    float: right;
+    position: relative;
+    display: block;
+    top: -15em;
+  }
+  /* caja de productos */
+  .productos {
+    margin-bottom: 2em;
+  }
+  /* imagenes productos */
+  .imagenes {
+    margin: 0;
+  }
+  /* texto productos */
+  .text {
+    width: 55%;
+    margin-right: 50px;
+    margin-top: 1em;
+    text-align: left;
+    /* border: 1px solid blue; */
+    display: inline-block;
+  }
+  /* texto sobre img en  header */
+  #sec-pri #text-hea {
+    display: inline-block;
+    /* margin-top: 120px; */
+    margin-left: 30px;
+    margin-bottom: 10em;
+  }
+  /* SECCION DE PRODUCTOS */
+  #sec-pro {
+    margin-bottom: 5em;
+  }
+}
