@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío 5 - Todo List</title>
+  </head>
+  <body style="background-color: antiquewhite;">
+    <div id="container">
+      <h1>Todo List</h1>
+      <hr />
+      <h4>Nueva tarea</h4>
+      <div id="caja">
+      <input type="text" id="nombreInvitado" /><button
+        onclick="agregarInvitado();"
+      >
+        Agregar
+      </button>
+    </div>
+    <div>
+      <h3>Invitados:</h3>
+      <ul id="invitados"></ul>
+    </div>
+    
+    
+    <script>
+      
+        
+      // arreglo de objetos
+      const invitados = [
+        { id: 1, tarea: "jhonny deep", ticket:false },
+        { id: 2, tarea: "bruce willes", ticket:false },
+        { id: 3, tarea: "pedro pascal" , ticket:false},
+        { id: 4, tarea: "jennifer aniston", ticket:false },
+      ];
+
+      const listaDeInvitados = document.querySelector("#invitados");
+      const cajita = document.querySelector("#nombreInvitado");
+      
+      const agregarInvitado = () => {
+        
+        const invitado = { id: Date.now(), tarea: cajita.value };
+
+        invitados.push(invitado);
+        actualizarLista();
+        cajita.value = "";
+      };
+      
+
+      const actualizarLista = function () {
+        // console.log(listaDeInvitados);
+        let htmlElemento = "";
+        for (let actividades of invitados) {
+          htmlElemento += `<li><button onclick="eliminarInvitado(${actividades.id})">x</button>${actividades.id}-${actividades.tarea}<p>${actividades.ticket == true? "realizado":"no realizado"}</p></li>
+          <button onclick="tareasRealizadas(${actividades.id})">Pasar a realizado</button>
+        
+          `;}
+          
+        const tareasTotales = `<p id="total"> Total de tareas es :${invitados.length}</p>`;                  
+
+        listaDeInvitados.innerHTML = htmlElemento + tareasTotales + funcionTareasValidadasPorBoton ;       
+        
+      };
+
+      const tareasRealizadas = function(id){
+         
+        const tareaActual =  invitados.find((tareaLista) => tareaLista.id == id) 
+        // console.log({id:tareaActual.id, tarea:tareaActual.tarea, ticket:true}, "valor prueba")
+        const datosArray = {id:tareaActual.id, tarea:tareaActual.tarea, ticket:true};
+
+        invitados.push(datosArray)
+        eliminarInvitado (id) 
+        
+      }
+
+      const funcionTareasValidadasPorBoton = function(){
+        const constTareasValidadasPorBoton = invitados.filter((tareasValidadas)=>tareasValidadas.ticket == true)
+        // console.log(constTareasValidadasPorBoton, "tarea ok")
+        const funcionTareasValidadasPorBoton = `<p id="total1"> Total de tareas realizadas es :${funcionTareasValidadasPorBoton()}</p>`;                          
+        return constTareasValidadasPorBoton.length
+
+
+      }
+      
+
+      const eliminarInvitado = (id) => {
+        const posicion = invitados.findIndex((invitado) => invitado.id == id);
+        invitados.splice(posicion, 1);
+        actualizarLista();
+
+      };
+      actualizarLista();
+            </script>
+    
+
+    <div id="resultados" style="border: 1px solid black;">
+        <p id="total"></p>
+        <p id="total1"></p>
+         
+        
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
