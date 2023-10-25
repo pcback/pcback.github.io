@@ -1,0 +1,686 @@
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Pantalla movil */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+/* @media (max-width: 576px) { */
+/* tamaño letra version movil */
+p {
+  font-size: 1rem;
+}
+/* contenedor ***************************************/
+.grid-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* %%%%%%%%%%%%%%***HEADER****%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* header************************************** */
+header {
+  grid-area: header;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #c81d11;
+  width: 100%;
+  height: 5em;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  z-index: 10;
+}
+.imgnav {
+  position: absolute;
+  padding: 20px 50px;
+  height: 40px;
+}
+.imgnav img {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+}
+nav p {
+  text-align: center;
+  justify-content: center;
+  align-items: centers;
+  margin-bottom: 0;
+  padding-top: 0.5em;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 10px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  gap: 0.7em;
+  text-decoration: none;
+}
+
+li a.active,
+li a:hover {
+  background: rgba(0, 0, 255, 1);
+  transition: 0.5s;
+}
+/* boton check */
+.checkbtn {
+  font-size: 18px;
+  color: antiquewhite;
+  line-height: 80px;
+  float: right;
+  margin-right: 30px;
+  cursor: pointer;
+  display: none;
+}
+.checkbtn {
+  display: block;
+}
+#check {
+  display: none;
+}
+/* icono hamburgyesa navbar */
+.imgnav {
+  padding-left: 20px;
+}
+
+/* ocultando menu nav */
+ul {
+  float: right;
+  position: fixed;
+  width: auto;
+  height: auto;
+  background-color: #0652dd95;
+  top: 80px;
+  right: -100%;
+  padding-bottom: 1em;
+  text-align: center;
+  transition: all 0.5s;
+}
+nav ul {
+  margin-right: 0;
+  padding-left: 0;
+}
+/* elementos li en nav */
+nav ul li {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+/* flex btn inicio */
+.inicio-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+}
+/* texto li en nav */
+.btn-menu {
+  position: relative;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  text-align: left;
+  background-color: grey;
+  left: 5px;
+  top: 5px;
+  height: 26px;
+  color: white;
+  border-color: black;
+  font-family: sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  box-shadow: 2px 2px 1px black;
+  padding: 2px 4px;
+  border: solid 1px black;
+}
+.btn-menu:hover {
+  position: relative;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-duration: 1s;
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 1px black;
+}
+/* colores de fondo botones menu */
+li a:hover,
+li a.active {
+  background: none;
+  color: red;
+}
+/* mostrando el menu nav oculto */
+#check:checked ~ ul {
+  right: 0;
+}
+/* %%%%%%%%%%%%%%***MENU LATERAL****%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+aside {
+  display: none;
+  grid-area: aside;
+}
+
+/* %%%%%%%%%%%%%%***MAIN****%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/*main ************************************** */
+
+main {
+  grid-area: main;
+  width: 100%;
+  height: auto;
+  /* background-color: burlywood; */
+}
+
+/* (())()()()()()()()()***ARTICULOS***(()()()())()() */
+
+/* (()()***ARTICULO inicio***((())()() */
+
+/* parametros de inicio */
+.inicio {
+  background-image: url(../img/img-inicio/images16.jpg);
+  opacity: 80%;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+/* titulo 1 de inicio */
+.text1inicio1 {
+  color: white;
+  padding-top: 3em;
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-weight: bold;
+  font-size: xx-large;
+}
+/* titulo 2 de inicio */
+.text1inicio2 {
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+}
+/* conatiner flex articulo inicio */
+.cont-flex-ini {
+  display: flex;
+  flex-direction: column;
+}
+/* img inicio */
+.img-ini {
+  margin: 1em;
+  width: 90%;
+  height: 15em;
+  border-radius: 5px 20px;
+}
+
+/* parrafo inicio */
+.inicio p.text-art {
+  color: white;
+  width: 90%;
+  height: auto;
+  margin: 2em;
+  justify-content: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+/* (())()()()()()()()()***ARTICULO CUERDA,***(()()()())()() */
+
+/* titulo del articulo */
+.titulo {
+  padding-top: 3em;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+}
+/* parrafo articulo cuerda */
+p.text-art {
+  width: 90%;
+  height: auto;
+  margin: 2em;
+  justify-content: center;
+  font-family: "Permanent Marker", cursive;
+}
+/* container flex articuloa cuerda */
+.cont-flex-cuerda,
+.cont-flex-emboque,
+.cont-flex-rayuela,
+.cont-flex-saco,
+.cont-flex-trompo,
+.cont-flex-volantin {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+/* boton ver mas articuloa cuerda */
+.cont-flex-cuerda a,
+.cont-flex-emboque a,
+.cont-flex-rayuela a,
+.cont-flex-saco a,
+.cont-flex-trompo a,
+.cont-flex-volantin a {
+  width: auto;
+  gap: 0;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1em;
+}
+/* estilos a articulos en seccion main  */
+
+/* twxto btn cerrar caja animacion */
+.cont-flex-cuerda a p,
+.cont-flex-emboque a p,
+.cont-flex-rayuela a p,
+.cont-flex-saco a p,
+.cont-flex-trompo a p,
+.cont-flex-volantin a p {
+  margin-bottom: 0;
+}
+/* container img´s principales y boton ver mas */
+.container-cuerda,
+.container-emboque,
+.container-rayuela,
+.container-saco,
+.container-trompo,
+.container-volantin {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: space-evenly;
+}
+/* dimensiones imagenes art cuerda */
+.container-cuerda img,
+.container-emboque img,
+.container-rayuela img,
+.container-saco img,
+.container-trompo img,
+.container-volantin img {
+  width: 35%;
+  height: 30%;
+  margin: 0;
+  outline: 2px solid gray;
+  background-size: cover;
+}
+/* btones cerrar en caja animacion */
+.grid-container-cuerdas a,
+.grid-container-emboque a,
+.grid-container-rayuela a,
+.grid-container-saco a,
+.grid-container-trompo a,
+.grid-container-volantin a {
+  width: auto;
+  gap: 0;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* caja desplegada de imgs en articulos */
+.caja-animacion-cuerda,
+.caja-animacion-emboque,
+.caja-animacion-rayuela,
+.caja-animacion-saco,
+.caja-animacion-trompo,
+.caja-animacion-volantin {
+  width: 80%;
+  margin-left: 3em;
+  margin-top: 2em;
+  outline: 2px solid grey;
+}
+/* dimensiones grid-item  */
+.grid-item-cuerda,
+.grid-item-emboque,
+.grid-item-rayuela,
+.grid-item-saco,
+.grid-item-trompo,
+.grid-item-volantin {
+  width: auto;
+}
+/* dimensiones imgs dentro de caja animacion */
+.grid-item-cuerda .animacion,
+.grid-item-emboque .animacion,
+.grid-item-rayuela .animacion,
+.grid-item-saco .animacion,
+.grid-item-trompo .animacion,
+.grid-item-volantin .animacion {
+  width: 70%;
+  height: auto;
+  margin: 0;
+}
+
+/* grid imgs en articulos  */
+.grid-container-cuerdas,
+.grid-container-emboque,
+.grid-container-rayuela,
+.grid-container-saco {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  width: auto;
+  justify-items: center;
+  align-items: center;
+}
+/* grid art trompo */
+.grid-container-trompo {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  width: auto;
+  justify-items: center;
+  align-items: center;
+  margin: 2em;
+}
+/* grid art volantin */
+.grid-container-volantin {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  width: auto;
+  justify-items: center;
+  align-items: center;
+  margin: 2em;
+}
+
+/* *****  ANIMACIONES   *********************************** */
+/* articulo trompo */
+.animacion1 {
+  border-radius: 50%;
+  outline: 2px solid gray;
+}
+.animacion1:hover {
+  display: block;
+  width: 30em;
+  height: auto;
+  text-align: center;
+  transition: all 0.5s;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2.2);
+}
+/* caja imgs articulo volantin */
+.animacion2:hover {
+  display: block;
+  width: 25em;
+  height: auto;
+  text-align: center;
+  transition: all 0.5s;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2.2);
+}
+
+/* click a animacion iagenes de articulos */
+.grid-container-cuerdas .grid-item-cuerda:onclick,
+.grid-container-emboque .animacion:onclick,
+.grid-container-rayuela .animacion:onclick,
+.grid-container-saco .animacion:onclick,
+.grid-container-trompo .animacion:onclick,
+.grid-container-volantin .animacion:onclick {
+  position: relative;
+  width: 25em;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  transition: all 1.5s;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2.2);
+}
+
+/* animacion de imagenes en articulos */
+.grid-container-cuerdas .grid-item-cuerda:hover,
+.grid-container-emboque .animacion:hover,
+.grid-container-rayuela .animacion:hover,
+.grid-container-saco .animacion:hover,
+.grid-container-trompo .animacion:hover,
+.grid-container-volantin .animacion:hover {
+  position: relative;
+  width: 25em;
+  height: auto;
+  text-align: center;
+  transition: 1.5s;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2.2);
+}
+
+/* %%%%%%%%%%%%%%***FOOTER****%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+footer {
+  grid-area: footer;
+  padding: 2em;
+}
+/* dimensiones formulario */
+footer .formulario {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8efba;
+  margin-top: 2em;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* item´s de formulario footer */
+.formulario h5,
+#from,
+#reply,
+#message {
+  margin: 1em;
+}
+/*  btn enviar formulario */
+.formulario .btn-footer button {
+  margin-left: 1em;
+  padding: 0.5em 1em;
+  border: none;
+}
+/* hover btn enviar formulario */
+.formulario .btn-footer button:hover {
+  position: relative;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-duration: 1s;
+  background-color: white;
+  color: black;
+  box-shadow: 2px 2px 1px #ea2027;
+}
+/* colores ITEMS formulario footer */
+#from input#name,
+input#mail,
+textarea#msg {
+  background-color: #c4e53890;
+  border-bottom: 2px solid #009432;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  width: 100%;
+}
+/* iconos footer */
+.iconfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 1em;
+}
+/* color icono facebook footer */
+.iconfooter .mdi-facebook {
+  color: blue;
+}
+
+/* color icono instagram footer */
+.iconfooter .mdi-instagram {
+  color: orangered;
+}
+
+/* color icono linkedin footer */
+.iconfooter .fa-linkedin {
+  color: darkblue;
+}
+/* color icono youtube footer */
+.iconfooter .fa-youtube {
+  color: red;
+}
+/* dimensionesiconos redes sociales */
+.iconfooter {
+  margin: 2em;
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Pantalla tablet */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+@media (min-width: 576px) {
+  /* %%%%%%%%%%%%%%***FOOTER****%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+  .iconfooter {
+    margin: 2em;
+  }
+}
+
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Pantalla Desktop */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+@media (min-width: 992px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header main "
+      "header footer";
+    grid-template-columns: 20% auto;
+  }
+
+  /* %%%%%%%%%%%%%%***HEADER****%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+  /* header */
+  header {
+    position: fixed;
+    top: 0;
+    background-color: #c0c0c0;
+    width: 20%;
+    height: 100vh;
+  }
+  /* nav header */
+  nav {
+    position: relative;
+    height: auto;
+    width: 100%;
+    z-index: 10;
+  }
+  nav ul {
+    margin-right: 110%;
+
+    position: relative;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  /* icono hamburgyesa navbar */
+  .checkbtn {
+    display: none;
+  }
+  nav ul li a {
+    width: auto;
+    color: white;
+    font-size: 1em;
+    padding: 7px 13px;
+    border-radius: 3px;
+    gap: 0.7em;
+    text-decoration: none;
+  }
+
+  /* flex btn inicio */
+  .inicio-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  ul a .btn-menu {
+    width: 10em;
+  }
+  /* texto li en nav */
+  .btn-menu {
+    text-align: center;
+  }
+
+  /* %%%%%%%%%%%%%%***MAIN****%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+  /* animacion de imagenes en articulos */
+  /* img inicio */
+  .img-ini {
+    margin: 1em;
+    width: 70%;
+    height: 15em;
+    border-radius: 5px 20px;
+  }
+  main {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+
+  /* titulo del articulo */
+  .titulo {
+    padding-top: 1em;
+  }
+  /* dimensiones caja  art inicio */
+  main #inicio,
+  #cuerda,
+  #emboque,
+  #rayuela,
+  #saco,
+  #trompo,
+  #volantin {
+    width: auto;
+    height: 100vh;
+  }
+  /* dimensiones caja contacto */
+  main #contacto {
+    width: auto;
+    height: 60vh;
+    top: 0;
+    margin-top: 2em;
+  }
+  /* parrafo art inicio */
+  .inicio p.text-art {
+    color: black;
+    background-color: greenyellow;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 8.2);
+    width: 60%;
+    height: auto;
+    margin: 4em;
+    margin-top: 4em;
+    justify-content: flex-end;
+    align-items: end;
+    font-family: "Permanent Marker", cursive;
+  }
+
+  /* %%%%%%%%%%%%%%***FOOTER****%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+  .iconfooter {
+    margin: 2em;
+  }
+}
