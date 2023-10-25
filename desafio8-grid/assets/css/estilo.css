@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  overflow: none;
+}
+
+.grid-container,
+.header.box,
+.main.box,
+.asidebar.box,
+.footer.box {
+  padding: 0;
+  margin: 0;
+}
+/* caja header */
+.header {
+  background-color: #102c54;
+  grid-area: header;
+
+  position: sticky bottom;
+  bottom: 0;
+}
+.titulo {
+  margin: 10px;
+  padding: 0;
+  text-align: center;
+  background-color: #102c54;
+  color: white;
+}
+
+/* inicio div asider */
+.asidebar {
+  grid-area: asidebar;
+  background-color: #dddddd;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: start;
+  margin-left: 20px;
+}
+
+.categorias {
+  margin-top: 30px;
+  margin-left: 5px;
+}
+.productos {
+  margin: 5px;
+}
+.cantidades {
+  color: #83877a;
+}
+
+/* caja main */
+.main {
+  grid-area: main;
+  display: block;
+  width: auto;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+/* container caja main */
+.grid-container-imgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: #dddddd;
+}
+
+/* caja de imagen */
+.grid-item {
+  display: flex;
+  margin: 30px;
+  background-color: white;
+}
+/* imagenes caja main */
+.imagenes {
+  width: 100%;
+  height: 382px;
+}
+.img3 {
+  width: 100%;
+  height: 392px;
+}
+.descripcion {
+  text-align: center;
+  color: #2c2c2c;
+}
+
+.precio {
+  text-align: center;
+  color: #83877a;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.producto__btn {
+  width: 100%;
+  height: 3rem;
+  background-color: #102c54;
+  color: white;
+}
+.producto__btn:hover {
+  color: #03a9f4;
+}
+.producto__btn:focus {
+  color: #ff9800;
+}
+/* fin caja main */
+
+/* caja footer */
+.footer {
+  grid-area: footer;
+  text-align: center;
+}
+/* fin caja footer */
+
+/* grilla grid */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "asidebar main"
+    "footer footer";
+  grid-template-columns: 15% 85%;
+}
+/* fin grilla grid */
+
+/* inicio footer */
+.footer {
+  color: #787580;
+  margin: 10px;
+}
+
+/* FONT SIZE */
+/* //////////////////////////////////////////// */
+/* ***************************************** */
+/* tamaño de letraas del chat 45px*/
+.tam-letra-45px-29em {
+  /* font-size: 45px; */
+  font-size: 2.9em;
+  letter-spacing: 0.01em;
+}
+
+/* tamaño de letraas del chat 16px*/
+.tam-letra-16px-1em {
+  /* font-size: 16px; */
+  font-size: 1em;
+  letter-spacing: 0.01em;
+}
+
+/* tamaño de letraas del chat 16px con negrita*/
+.tam-letra-16px-1em-negrita {
+  /* font-size: 16px; */
+  /* font-size: 1.2em; */
+  font-weight: bold;
+  letter-spacing: 0em;
+}
+
+/* tamaño de letraas del chat 14px*/
+.tam-letra-14px-09em {
+  /* font-size: 14px; */
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
+}
+/* tamaño de letraas del chat 10px*/
+.tam-letra-10px-07em {
+  /* font-size: 10px; */
+  font-size: 0.7em;
+  letter-spacing: 0.01em;
+}
+/* ***************************************** */
+/* //////////////////////////////////////////// */
