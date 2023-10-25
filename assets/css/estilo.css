@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(../img/img-portada/img-fscreen2.png);
+  width: 100%;
+}
+/* //////////////////////////////////////////////////////// */
+/* header **********************************/
+header {
+  grid-area: header;
+  width: 100%;
+}
+/* inicio navbar¨***************** */
+.container-fluid {
+  background-color: yellowgreen;
+}
+/* BOTONES DE NAVBAR A ENLACES MODAL*/
+/* ****boton a cv ***********/
+#boton-cv {
+  text-decoration: none;
+}
+
+/* boton menu selectivo a certificados ***********/
+.certificados:hover {
+  outline: yellow;
+}
+
+/* ****boton a POrtafolio ***********/
+#btn-portafolio {
+  background-color: yellow;
+  border: 2px solid green;
+  background-color: black;
+}
+
+/* //////////////////////////////////////////////////////// */
+/* aside **********************************/
+aside {
+  float: right;
+  grid-area: aside;
+}
+/* inicio rr-ss********************************** */
+.imgred-soc {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+/* hover img rr-ss *********************/
+.hover-img {
+  text-decoration: none;
+}
+
+/* //////////////////////////////////////////////////////// */
+/* main **********************************/
+main {
+  grid-area: main;
+  height: 80vh;
+}
+/* img logo pagina ******************** */
+.img-logo {
+  margin-top: 4em;
+  width: 18em;
+  margin-right: 125px;
+  display: inline-block;
+}
+
+/* /////////////////////////////////////////////////////// */ /* //////////////// */
+/* footer **********************************/
+footer {
+  grid-area: footer;
+  justify-content: end;
+}
+/* fin footer**********************************/
+/* /////////////////////////////////////////////////////// */
+/* //////////detalles extras en modales */
+
+/* **********clase btn-bootstrap  boton Elerning  */
+.btn-bootsrap {
+  margin-bottom: 2em;
+}
+
+/* ***********hover al cambiar imagen en proyecto de certificados ******************* */
+#btn-next-carrusel-certificados:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#btn-prev-carrusel-certificados:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* ************************************************************************************************************** */
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+/* Pantalla MOVIL */
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+@media (max-width: 576px) {
+  /* … */
+  .proyect {
+    display: none;
+  }
+  /* caja modal de proyectos */
+  .carousel-indicators h6 {
+    display: none;
+  }
+  /* boton de certificado */
+  .btn-certificados {
+    width: 90%;
+    background-color: springgreen;
+  }
+  /* boton de proyectos */
+  .btn-proyectos {
+    width: 80%;
+    text-align: center;
+    background-color: steelblue;
+  }
+  /* boton acerca */
+  .btn-acerca {
+    background-color: darkgoldenrod;
+    width: 90%;
+  }
+}
