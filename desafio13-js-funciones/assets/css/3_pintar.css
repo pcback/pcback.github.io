@@ -1,0 +1,12 @@
+body {
+  background-image: url(../img/springfield.png);
+  background-size: cover;
+}
+#ele1 {
+  border-radius: 50%;
+  text-align: center;
+  height: 4em;
+}
+#img1 {
+  border-radius: 40%;
+}
