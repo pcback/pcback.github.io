@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- icono pag -->
+    <link
+      rel="icon"
+      href="assets/img/estudios-posteriores/logo_desafio-latam.jpg"
+    />
+    <!-- titulo de pagina -->
+    <title>pcback.github.io</title>
+    <!-- hoja de estilo css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- link tipografias Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- iconos de font-awsone -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- iconos bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr. net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/estilo.css" />
+  </head>
+  <body>
+    <!-- ///////////////////******  INICIO CONTENEDOR PADRE******/////////////////////////////////////////////////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="contenedor-padre">
+      <header>
+        <!-- inicio navbar -->
+        <div class="container-fluid mt-2">
+          <!-- menu navbar -->
+          <nav class="navbar navbar-dark text-white navbar-expand-md m-0">
+            <p><strong>PCBACK</strong></p>
+            <a class="navbar-brand text-light" href="#"></a>
+            <button
+              class="navbar-toggler boton-menu"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse flex-md-row flex-md-col flex-xl-col"
+              id="navbarNavAltMarkup"
+            >
+              <!-- medidas flex-md-row flex-md-col flex-xl-col -->
+              <div class="navbar-nav">
+                <!-- **********boton E-learning -->
+                <button
+                  type="button"
+                  class="item btn btn-outline-success text-light me-2 m-3 boton"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal-tools"
+                >
+                  E-learning
+                </button>
+
+                <!-- ****boton a cv -->
+                <button
+                  type="button"
+                  class="item btn btn-outline-success text-light me-2 m2 rounded-pill boton"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop-proyectos"
+                >
+                  <a
+                    class="text-light"
+                    id="boton-cv"
+                    href="cv-rm/index-cv-rm.html"
+                    target="_blank"
+                  >
+                    Curriculum</a
+                  >
+                </button>
+
+                <!-- **********boton Portafolio -->
+                <li class="nav-item dropdown">
+                  <a
+                    id="btn-portafolio"
+                    class="nav-link dropdown-toggle text-light rounded-pill boton ps-3 m-2"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >Portafolio</a
+                  >
+
+                  <!-- **********boton menu selectivo a certificados  -->
+                  <ul
+                    class="dropdown-menu row"
+                    style="background-color: initial; position: absolute"
+                  >
+                    <!-- Button trigger modal a certificados-->
+                    <button
+                      type="button"
+                      class="item btn btn-outline-success border border-5 text-light me-2 rounded-pill m-3 btn-certificados"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop-certificados"
+                    >
+                      Certificados
+                    </button>
+
+                    <!-- Button trigger modal a proyectos -->
+                    <button
+                      type="button"
+                      class="item btn btn-outline-success border border-5 text-light me-2 rounded-pill flex-row btn-proyectos"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop-proyectos"
+                    >
+                      Proyectos
+                    </button>
+
+                    <!-- **********boton Sobre Nosotros-->
+                    <button
+                      type="button"
+                      class="item btn btn-outline-success border border-5 text-light m-3 rounded-pill btn-acerca"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal-myv"
+                    >
+                      Acerca de
+                    </button>
+                  </ul>
+                </li>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <!-- fin nav **************** -->
+      </header>
+
+      <!-- ASIDE  ********************* -->
+      <aside>
+        <!--INICIO MENU redes sociales-->
+        <div class="redes d-flex flex-row p-5">
+          <div id="facebook flex-col">
+            <a href="https://www.facebook.com/chacho.marti" target="_blank">
+              <img
+                class="imgred-soc p-2"
+                src="assets/img/img-rrss/facebook.png"
+                alt="facebook"
+              />
+            </a>
+          </div>
+          <div id="youtube">
+            <a
+              href="https://www.youtube.com/watch?v=MJkdaVFHrto"
+              target="_blank"
+            >
+              <img
+                class="imgred-soc p-2"
+                src="assets/img/img-rrss/youtube.png"
+                alt="youtube"
+              />
+            </a>
+          </div>
+          <div id="linkedin">
+            <a
+              href="https://www.linkedin.com/in/rodrigo-martinez-a9213770/"
+              target="_blank"
+            >
+              <img
+                class="imgred-soc p-2"
+                src="assets/img/img-rrss/linkedin.png"
+                alt="linkedin"
+            /></a>
+          </div>
+          <div id="instagram">
+            <a href="https://www.instagram.com/" target="_blank">
+              <img
+                class="imgred-soc p-2"
+                src="assets/img/img-rrss/instagram.png"
+                alt="instagram"
+            /></a>
+          </div>
+        </div>
+        <!--FIN MENU redes sociales-->
+      </aside>
+      <!--fin ASIDE  ********************* -->
+
+      <!-- MAIN********************* -->
+      <main>
+        <!-- ****************logo -->
+        <img
+          class="img-logo"
+          src="assets/img/img-portada/logo-azul-white.png"
+          alt=""
+        />
+        <br />
+      </main>
+      <!--fin  MAIN********************* -->
+
+      <!--footer  ********************* -->
+      <footer>
+        <div class="text-white" id="copyright">
+          Copyright&copy; 2023 - Página creada por pcback - Todos los derechos
+          reservados
+        </div>
+      </footer>
+    </div>
+    <!-- ///////////////////******  FIN CONTENEDOR PADRE******/////////////////////////////////////////////////////////////////////////// -->
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- )()()()()()()())()()()()()()()()()()()()()()()INICIO ENLACES MODALES)()()()()()()())()()()()()()()()()()()()()()()()()()()()()() -->
+    <!-- )()()()()()()())()()()()()()()()()()()()()()())()()()()()()())()()()()()()()()()()()()()()())()()()()()()())()()()()()()()()()() -->
+    <!-- ///////////////////******  ACERCA DE  ******//////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Button trigger modal mision y vision de  -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal-myv"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Acerca de</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- ***********inicio body -->
+            ¿ Misión? Obtener el conociemiento de las aplicaciones de desarrollo
+            para dar las mejores opciones de diseño a las paginas solicitadas
+            por el prospecto.
+            <br /><br /><br />
+            ¿ Visión? Crear aplicaciones que solucionen en el menor tiempo
+            posible las necesidaddes de las personas y un mejor acceso al medio.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ///////////////////******FIN  ACERCA DE ******/////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////****** E-ELERNING  ////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal-tools"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- boton bootscamps -->
+            <h1 class="modal-title fs-3" id="staticBackdropLabel">
+              <button
+                type="button"
+                class="bg-light rounded-pill m-2 fs-5 pe-3 ps-3"
+              >
+                Bootcamp
+              </button>
+              <a href="https://desafiolatam.com/" target="_blank"
+                ><img
+                  src="assets/img/estudios-posteriores/logo_desafio-latam.jpg"
+                  alt=""
+                  style="width: 150px; height: 100px; margin: 10px"
+              /></a>
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- ********body -->
+
+            <div class="container">
+              <div class="ico-html">
+                <div class="row">
+                  <!-- icono html -->
+                  <div class="col col-4">
+                    <img
+                      class="col-6"
+                      src="assets/img/estudios-posteriores/HTML5_logo.png "
+                      alt=""
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        margin: 10px;
+                        margin-left: 30px;
+                      "
+                    />
+                    <h1 class="modal-title col-3 fs-3" id="staticBackdropLabel">
+                      <button
+                        type="button"
+                        class="bg-light rounded-pill m-2 fs-5 pe-3 ps-3"
+                      >
+                        <a
+                          class="hover-img"
+                          href="https://desafiolatam.com/santiago/taller-html-css/"
+                          target="_blank"
+                          ><strong>HTML</strong></a
+                        >
+                      </button>
+                    </h1>
+                  </div>
+                  <!-- icono css -->
+                  <div class="col col-4">
+                    <img
+                      src="assets/img/estudios-posteriores/CSS3_logo_and_wordmark.png.png"
+                      alt=""
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        margin: 10px;
+                        margin-left: 20px;
+                      "
+                    />
+                    <br />
+                    <h1 class="modal-title col-3 fs-3" id="staticBackdropLabel">
+                      <button
+                        type="button"
+                        class="bg-light rounded-pill m-2 fs-5 pe-3 ps-3"
+                      >
+                        <a
+                          class="hover-img"
+                          href="https://desafiolatam.com/santiago/taller-html-css/"
+                          target="_blank"
+                          ><strong>CSS</strong></a
+                        >
+                      </button>
+                    </h1>
+                  </div>
+                  <!-- icono github -->
+                  <div class="col col-4">
+                    <img
+                      src="assets/img/estudios-posteriores/github-logo.png"
+                      alt=""
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        margin: 10px;
+                        margin-left: 40px;
+                      "
+                    />
+                    <h1 class="modal-title fs-3" id="staticBackdropLabel">
+                      <button
+                        type="button"
+                        class="bg-light rounded-pill m-2 fs-5 pe-3 ps-3"
+                      >
+                        <a
+                          class="hover-img"
+                          href="https://github.com/"
+                          target="_blank"
+                          ><strong>GITHUB</strong></a
+                        >
+                      </button>
+                    </h1>
+                  </div>
+                  <!-- icono bootstrap -->
+                  <div class="col col-6 btn-bootsrap">
+                    <img
+                      src="assets/img/estudios-posteriores/img-bootsrap.png"
+                      alt=""
+                      style="
+                        width: 40px;
+                        height: 40px;
+                        margin: 10px;
+                        margin-left: 60px;
+                      "
+                    />
+
+                    <h1
+                      class="modal-title col-12 fs-3"
+                      id="staticBackdropLabel"
+                    >
+                      <button
+                        type="button"
+                        class="bg-light rounded-pill m-2 fs-5 pe-3 ps-3"
+                      >
+                        <a
+                          class="hover-img"
+                          href="https://blog.getbootstrap.com/videos/"
+                          target="_blank"
+                          ><strong>BOOTSTRAP 5</strong></a
+                        >
+                      </button>
+                    </h1>
+                  </div>
+                  <!-- icono Java Script -->
+                  <div class="col col-6 btn-bootsrap">
+                    <img
+                      src="assets/img/estudios-posteriores/img-javaScript.jpg"
+                      alt=""
+                      style="
+                        width: 60px;
+                        height: 60px;
+                        margin: 10px;
+                        margin-left: 60px;
+                      "
+                    />
+
+                    <h1
+                      class="modal-title col-12 fs-3"
+                      id="staticBackdropLabel"
+                    >
+                      <button
+                        type="button"
+                        class="bg-light rounded-pill m-2 fs-5 pe-3 ps-3"
+                      >
+                        <a
+                          class="hover-img"
+                          href="https://blog.getbootstrap.com/videos/"
+                          target="_blank"
+                          ><strong>Java Script</strong></a
+                        >
+                      </button>
+                    </h1>
+                  </div>
+
+                  <!-- icono React -->
+                  <div class="col col-6 btn-bootsrap">
+                    <img
+                      src="assets/img/estudios-posteriores/img-react.png"
+                      alt=""
+                      style="
+                        width: 60px;
+                        height: 60px;
+                        margin: 10px;
+                        margin-left: 30px;
+                      "
+                    />
+
+                    <h1
+                      class="modal-title col-12 fs-3"
+                      id="staticBackdropLabel"
+                    >
+                      <button
+                        type="button"
+                        class="bg-light rounded-pill m-2 fs-5 pe-3 ps-3"
+                      >
+                        <a
+                          class="hover-img"
+                          href="https://blog.getbootstrap.com/videos/"
+                          target="_blank"
+                          ><strong>React</strong></a
+                        >
+                      </button>
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ////////////******FIN  E-ELERNING  ////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ///////////////**********  PROYECTOS   /////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- ****************inicio modal proyecto dentro de botom proyectos**************************** -->
+    <div
+      class="modal fade"
+      id="staticBackdrop-proyectos"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content align-self-center">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="staticBackdropLabel">
+              <button
+                type="button"
+                class="bg-light rounded-pill m-2 fs-5 pe-3 ps-3"
+              >
+                Proyectos
+              </button>
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- *********inicio body interior modal ************** -->
+          <div class="modal-body">
+            <!-- ***********inicio carrusel ******************* -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+              <div class="carousel-indicators">
+                <h6>!haz clic!</h6>
+                <br />
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="0"
+                  class="active bg-primary"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="1"
+                  class="bg-danger"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="2"
+                  class="bg-warning"
+                  aria-label="Slide 3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="3"
+                  class=""
+                  aria-label="Slide 4"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="4"
+                  class=""
+                  aria-label="Slide 5"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="5"
+                  class=""
+                  aria-label="Slide 6"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="6"
+                  class=""
+                  aria-label="Slide 7"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="7"
+                  class=""
+                  aria-label="Slide 8"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="8"
+                  class=""
+                  aria-label="Slide 9"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleDark"
+                  data-bs-slide-to="9"
+                  class=""
+                  aria-label="Slide 10"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <!-- inicio de deafios  -->
+                <!-- desafio 17 -->
+                <div class="carousel-item">
+                  <a
+                    href="desafio17_React_basico/desafio_react/index.html"
+                    target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d17.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 16 -->
+                <div class="carousel-item">
+                  <a href="desafio16-APis/Apis/apis.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d16.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 15 -->
+                <div class="carousel-item">
+                  <a
+                    href="desafio15-metodos_arreglosYobjetos/index.html"
+                    target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d15.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 14 -->
+                <div class="carousel-item">
+                  <a
+                    href="desafio14-arreglo_y_objetos/index.html"
+                    target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d14.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 13  pagina-->
+                <div class="carousel-item">
+                  <a href="desafio13-js-funciones/5_pagina.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d13.pagina.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 13  colores-->
+                <div class="carousel-item">
+                  <a
+                    href="desafio13-js-funciones/4_colores.html"
+                    target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d13.colores.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 13  pintar-->
+                <div class="carousel-item">
+                  <a href="desafio13-js-funciones/3_pintar.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d13.pintar.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 13  arrows-->
+                <div class="carousel-item">
+                  <a href="desafio13-js-funciones/2_arrows.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d13.arrows.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 13  funcion-->
+                <div class="carousel-item">
+                  <a
+                    href="desafio13-js-funciones/1_funcion.html"
+                    target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d13.funcion.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 12  imagen-->
+                <div class="carousel-item">
+                  <a href="desafio12-js-condiciones/imagen.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d12.imagen.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 12  passwords-->
+                <div class="carousel-item">
+                  <a
+                    href="desafio12-js-condiciones/passwords.html"
+                    target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d12.passwords.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 12  stickers-->
+                <div class="carousel-item">
+                  <a
+                    href="desafio12-js-condiciones/stickers.html"
+                    target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d12.stickers.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 11  -->
+                <div class="carousel-item">
+                  <a href="desafio11-js-calculos/base.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d11.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 10  -->
+                <div class="carousel-item">
+                  <a href="desafio10-transiciones/index.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d10.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 9  -->
+                <div class="carousel-item">
+                  <a href="desafio9-mediaqueris/index.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d9.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 8  -->
+                <div class="carousel-item">
+                  <a href="desafio8-grid/index.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d8.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 7  -->
+                <div class="carousel-item">
+                  <a href="desafio7-flexbox/index.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d7.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 6 -->
+                <div class="carousel-item">
+                  <a href="index.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d6.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 5 -->
+                <div class="carousel-item">
+                  <a
+                    href="https://github.com/pcback/pcback.github.io"
+                    target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d5.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 4 -->
+                <div class="carousel-item">
+                  <a href="desafio4/index-d4.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d4.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 3 -->
+                <div class="carousel-item">
+                  <a href="desafio3/index-d3.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d3.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 2 -->
+                <div class="carousel-item" data-bs-interval="2000">
+                  <a href="desafio2/index-d2.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d2.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- desafio 1 -->
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <a href="cv-rm/index-cv-rm.html" target="_blank"
+                    ><img
+                      src="assets/img/img-proyectos/img-pro-d1.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5></h5>
+                    <p></p>
+                  </div>
+                </div>
+                <!-- fin de desafios  -->
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleDark"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- ***********fin carrusel******************* -->
+
+            <!-- *************fin body interior modal *********************** -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary rounded-pill m-2 fs-5 pe-3 ps-3"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ****************fin modal proyecto dentro de botom portafolio**************************** -->
+    <!-- </div> -->
+    <!-- ///////////////**********FIN  PROYECTOS   /////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- //////////////////****** CERTIFICADOS  ///////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- ************inicio modal********** -->
+    <div
+      class="modal fade"
+      id="staticBackdrop-certificados"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" style="height: 90%">
+        <div class="modal-content align-self-center col-xl-12">
+          <div class="modal-header">
+            <h1 class="modal-title fs-3" id="staticBackdropLabel">
+              <button
+                type="button"
+                class="bg-light rounded-pill m-2 fs-5 pe-3 ps-3"
+              >
+                Certificados
+              </button>
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- *********inicio body interior modal ************** -->
+          <div class="modal-body">
+            <!-- **********modal para carrusel****************** -->
+
+            <!-- *********carrusel************* -->
+            <div id="carouselExample" class="carousel slide">
+              <div
+                class="carousel-inner align-self-center"
+                id="carrusel-certificados"
+              >
+                <!-- certificado 5 css-->
+                <div class="carousel-item">
+                  <a
+                    href="assets/img/img-certificados/Certificado5-5css.pdf"
+                    target="_blank"
+                  >
+                    <img
+                      id="img-carrusel-certificados"
+                      src="assets/img/img-certificados/Certificado5-css.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                </div>
+                <!-- certificado 1 html-->
+                <div class="carousel-item">
+                  <a
+                    href="assets/img/img-certificados/Certificado-educativo1-1.pdf"
+                    target="_blank"
+                  >
+                    <img
+                      id="img-carrusel-certificados"
+                      src="assets/img/img-certificados/Certificado-educativo1.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                </div>
+                <!-- certificado 2 -->
+                <div class="carousel-item active">
+                  <a
+                    href="assets/img/img-certificados/Certificado-educativo2-2.pdf"
+                    target="_blank"
+                  >
+                    <img
+                      id="img-carrusel-certificados"
+                      src="assets/img/img-certificados/Certificado-educativo2.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                </div>
+                <!-- certificado 3 -->
+                <div class="carousel-item">
+                  <a
+                    href="assets/img/img-certificados/Certificado-educativo3-3.pdf"
+                    target="_blank"
+                  >
+                    <img
+                      id="img-carrusel-certificados"
+                      src="assets/img/img-certificados/Certificado-educativo3.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                </div>
+                <!-- certificado 4 -->
+                <div class="carousel-item">
+                  <a
+                    href="assets/img/img-certificados/Certificado-educativo4-4.pdf"
+                    target="_blank"
+                  >
+                    <img
+                      id="img-carrusel-certificados"
+                      src="assets/img/img-certificados/Certificado-educativo4.png"
+                      class="d-block w-100"
+                      alt="..."
+                  /></a>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                id="btn-prev-carrusel-certificados"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                id="btn-next-carrusel-certificados"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- ********* fn carrusel************* -->
+          </div>
+
+          <!-- **********fin mpdal para carrusel****************** -->
+
+          <!-- *************fin body interior modal *********************** -->
+
+          <div class="modal-footer align-self-center">
+            <button
+              type="button"
+              class="btn btn-secondary rounded-pill m-2 fs-5 pe-3 ps-3"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ****************fin modal proyecto certificados**************************** -->
+    <!-- //////////////////******FIN CERTIFICADOS  ///////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
