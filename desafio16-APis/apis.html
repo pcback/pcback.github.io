@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apis</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-dark text-white">
+    <header>
+        <h1>Conversor de monedas</h1>
+        <hr class="text-info" />
+    </header>
+    <main class="bg-secondary px-5 py-3 rounded">
+      
+        <div id="principal">
+            <h1>Pesos CLP</h1>
+            <input placeholder="Ingrese monto CLP" id="clp">
+    
+            <label for="monedaCambio">moneda a convertir</label>
+            
+            <select id="monedaCambio">
+                <option disabled selected>Seleccione moneda</option>
+                <option value="dolar_intercambio">Dolar</option>
+                <option value="euro">Euro</option>
+    
+            </select>
+        </div>
+        <div>
+            <button class="btn btn-info w-100 text-white fw-bold" id="Busqueda">Buscar</button>
+        </div>
+        <div style="background-color: lightblue;">
+            <canvas id="myChart"></canvas>
+            <h5><span id="parrafo">...</span></h5>
+          </div>
+          
+           
+          
+           
+</main>
+<script defer src="assets/js/apis.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+
+</html>
